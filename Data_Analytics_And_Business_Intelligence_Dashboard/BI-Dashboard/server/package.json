@@ -1,0 +1,28 @@
+{
+  "name": "bi-dashboard-server",
+  "version": "1.0.0",
+  "description": "Backend API for Project 9 - Data Analytics & BI Dashboard",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "multer": "^2.0.0",
+    "pdfkit": "^0.15.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}

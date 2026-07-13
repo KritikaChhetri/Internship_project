@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-subtle text-ink-900 font-sans antialiased;
+  }
+  .dark body {
+    @apply bg-surface-dark text-white;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface dark:bg-surface-darksubtle border border-ink-900/5 dark:border-white/5 rounded-xl;
+  }
+  .stat-figure {
+    @apply font-mono tabular-nums;
+  }
+}
+
+/* subtle scrollbar so dense tables don't look default-browser */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: theme("colors.ink.300");
+  border-radius: 8px;
+}
